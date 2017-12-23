@@ -1,0 +1,119 @@
+    j:=1;
+     if kY > 0 then
+     begin
+
+     a := kY/kX;{((cir.cY+kY) - cir.cY)/((cir.cX+kX) - cir.cX);  }
+     b := cir.cY - a*cir.cX;
+
+     hitX := (rect.Y - b) / a;
+
+     i :=rect.X+rect.W/15;
+
+     kX2 := kX;
+     kY2 := kY;
+
+     {lX := cir.cX;
+     lY := cir.cY;
+     lX2 := hitX;
+     lY2 := rect.Y;
+     hitX := cir.cX;
+     i:= rect.X +100; }
+
+     while (i < rect.X + 9/10*rect.W) do
+     begin
+
+        delta := i - hitX;
+        a3 := a;
+        b3 := b+delta;
+
+        srodek := round(rect.X + (rect.W / 2));
+        odleglosc := abs(i - srodek) /150 ;
+
+        if odleglosc >= 1 then odleglosc := odleglosc - 0.05;
+        if odleglosc < 0.2 then odleglosc := odleglosc-0.5;
+
+       { if deskaVector * kX2 < 0 then kX2 := (-1)*kX2;    }
+
+        kX2 := abs(1+odleglosc) * kX2;
+        kY2 := (-1) * abs(1-odleglosc) *kY2;
+
+
+        a2 := kY2/kX2;
+        b2 := rect.Y - a2*i - delta;
+
+
+       { if(kX < 0) then a2 := (-1)*a2;   }
+
+
+
+        for j:=maxC downto 1 do
+        begin
+             with bricks[j] do
+             begin
+                if (x > 0) and (x < screenX) then
+                begin
+                pY := brickH + y;
+                pX := (pY - b2)/a2;
+
+                if(pX > x) and (pX < x+brickW) then
+                begin
+                     if ((kx2 > 0) and (x > cir.cX)) or ((kx2<0) and (x < cir.cX)) then
+                     begin
+                      if(i=rect.X+rect.W/15) or (abs(wyborAI-(rect.X+rect.W/2)) > abs(i-(rect.X+rect.W/2))) then
+                      begin
+                      wyborAI := i;
+                      wyborj := j;
+                      end;
+
+                     lock := true;
+
+                     end;
+                end;
+
+                end;
+             end;
+        end;
+
+        i := i +rect.W /10;
+
+     end;
+         koniec:
+
+
+     end ;
+
+
+     bricks[j].color := 3;
+      writeln(wyborAI);
+
+   {  else i := rect.X+rect.W/3;   }
+    {    lX := hitX;
+       lY := rect.Y;
+       lX2 := -b2/a2;
+       lY2 := 0;       }
+
+
+     if(kY > 0) and (hitX < screenX) and(hitX > 0)then
+     begin
+
+           if(hitX > wyborAI +5) then
+           begin
+                bestVector := +3;
+           end
+           else if(hitX < wyborAI +5) then
+           begin
+                bestVector := -3;
+           end;
+     end
+     else
+     begin
+     {sledzi pilke gdy leci do gory albo pilka ma zamiar sie odbic o siane}
+             if(cir.cX > rect.X + rect.W/5) then
+             begin
+                  bestVector := +3;
+             end
+             else if(cir.cX < rect.X + rect.W/5) then
+             begin
+                  bestVector := -3;
+             end;
+     end;                 

@@ -1,0 +1,48 @@
+=================================
+=== ZenGL 0.3.12 (2013.08.12) ===
+=================================
+[00000035ms] Begin
+[00000036ms] Current mode: 1366 x 768
+[00000093ms] wglChoosePixelFormatARB: zDepth = 24; stencil = 0; fsaa = 0
+[00000108ms] GL_VERSION: 3.0 Mesa 17.0.7
+[00000108ms] GL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile 
+[00000109ms] GL_MAX_TEXTURE_SIZE: 16384
+[00000109ms] GL_EXT_TEXTURE_COMPRESSION_S3TC: TRUE
+[00000112ms] GL_SGIS_GENERATE_MIPMAP: TRUE
+[00000113ms] GL_MAX_TEXTURE_UNITS_ARB: 8
+[00000114ms] GL_EXT_TEXTURE_FILTER_ANISOTROPIC: TRUE
+[00000114ms] GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[00000115ms] GL_EXT_BLEND_FUNC_SEPARATE: TRUE
+[00000115ms] GL_MAX_RENDERBUFFER_SIZE: 16384
+[00000115ms] GL_EXT_FRAMEBUFFER_OBJECT: TRUE
+[00000148ms] WGL_PBUFFER: TRUE
+[00000148ms] Support WaitVSync: TRUE
+[00000188ms] Ogg: Initialized
+[00000188ms] Theora: Initialized
+[00000244ms] Texture loaded: "data/font/Open Sans-Regular-10pt-page0.tga"
+[00000266ms] Texture loaded: "data/font/Open Sans-Regular-36pt-page0.tga"
+[00000276ms] Texture loaded: "data/font/Open Sans-Regular-36pt-page1.tga"
+[00000281ms] Texture loaded: "data/font/Open Sans-Regular-36pt-page2.tga"
+[00000286ms] Texture loaded: "data/font/Open Sans-Regular-36pt-page3.tga"
+[00000291ms] Texture loaded: "data/font/Open Sans-Regular-36pt-page4.tga"
+[00000296ms] Texture loaded: "data/font/Open Sans-Regular-36pt-page5.tga"
+[00000311ms] Texture loaded: "data/font/Open Sans-Regular-24pt-page0.tga"
+[00000316ms] Texture loaded: "data/font/Open Sans-Regular-24pt-page1.tga"
+[00000320ms] Texture loaded: "data/font/Open Sans-Regular-24pt-page2.tga"
+[00000328ms] Texture loaded: "data\spup.png"
+[00000329ms] Texture loaded: "data\spdown.png"
+[00000330ms] Texture loaded: "data\short.png"
+[00000334ms] Texture loaded: "data\long.png"
+[00000344ms] Texture loaded: "data\rzepa.png"
+[00000347ms] Texture loaded: "data\gun.png"
+[00000353ms] Texture loaded: "data\heart.png"
+[00000354ms] Texture loaded: "data\bullet.png"
+[00000379ms] Texture loaded: "data\cat.png"
+[00000406ms] Texture loaded: "data\main.png"
+[00000475ms] Texture loaded: "data\settings.png"
+[00000524ms] Texture loaded: "data\wybor.png"
+[00000550ms] Texture loaded: "data\stats.png"
+[00000577ms] Texture loaded: "data\end.png"
+[00000601ms] Texture loaded: "data\maps.png"
+[00000601ms] DirectSound: loading DSound.dll
+[00000790ms] DirectSound: sound system initialized

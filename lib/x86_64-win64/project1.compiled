@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\2.6.2\bin\x86_64-win64\fpc.exe" Date="1131443479"/>
+  <Params Value=" -MDelphi -Scghi -O1 -g -gl -vewnhi &quot;-FiE:\Studia\Semestr 1\Wdi\Projekt\lib\x86_64-win64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\extra&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\headers&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\src&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\lib\msvcrt\x86_64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\lib\jpeg\x86_64-win64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\lib\chipmunk\x86_64-win64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\lib\ogg\x86_64-win64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\lib\theora\x86_64-win64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\lib\zip\x86_64-win64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\zengl\lib\zlib\x86_64-win64&quot; &quot;-FuE:\Studia\Semestr 1\Wdi\Projekt\&quot; &quot;-FUE:\Studia\Semestr 1\Wdi\Projekt\lib\x86_64-win64\&quot; -l project1.lpr"/>
+</CONFIG>
